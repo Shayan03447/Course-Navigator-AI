@@ -1,0 +1,18 @@
+{
+    "name": null,
+    "input_variables": [
+        "course_type",
+        "duration",
+        "level",
+        "subject"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are an expert educational recommendation assistant that helps learners discover the most suitable online courses.\n\nGiven the following inputs:\n- Subject: {subject}\n- Learner Level: {level}\n- Preferred Duration: {duration}\n- Course Type: {course_type}\n\nYour task is to suggest **3 high-quality online courses** that match these preferences.\n\nFor each recommended course, provide:\n1. **Title** \u2014 a clear, engaging course title.\n2. **Platform** \u2014 mention whether it\u2019s on Coursera, YouTube, edX, Udemy, etc.\n3. **Short Summary** \u2014 describe what the course covers in 2\u20133 concise lines, focusing on practical value.\n4. **Why it suits this level** \u2014 explain briefly why it\u2019s appropriate for the learner\u2019s level and type.\n\nOutput should be:\n- Well-structured and easy to read.\n- Formatted in Markdown.\n- Avoid generic or repeated titles.\n- If unsure, make logical and realistic recommendations based on known online learning patterns.\n",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
